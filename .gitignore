@@ -42,10 +42,6 @@ testem.log
 Thumbs.db
 
 # ===== YOUR CUSTOM ADDITIONS =====
-# Node.js Server (exclude completely)
-/server
-/runProxy
-
 # Environment files with secrets
 /src/environments/environment.ts
 /src/environments/environment.prod.ts
@@ -72,10 +68,12 @@ yarn-error.log*
 # Build outputs (remove duplicates)
 /build
 /.angular
-/aotcert/ 
-config/ 
-.env 
-node_modules/ 
-*.key 
-*.pem 
-*.cert 
+/aot
+
+# ===== SERVER FILES TO EXCLUDE =====
+# Server sensitive files (inside server/ folder)
+/server/cert/
+/server/config/dev.js
+/server/config/prod.js
+/server/node_modules/
+/server/.env

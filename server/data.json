@@ -1,0 +1,90 @@
+{
+  "tmers": [{
+      "title": "StellarVibes",
+      "city": "San Francisco",
+      "street": "Main street",
+      "category": "Fashion",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 4,
+      "shared": false,
+      "description": "International Model.",
+      "dailyRate": 43
+      },
+      {
+      "title": "TrendMaven",
+      "city": "New York",
+      "street": "Time Square",
+      "category": "Fashion",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 1,
+      "shared": true,
+      "description": "International Model.",
+      "dailyRate": 11
+      },
+      {
+      "title": "CaptivateLife",
+      "city": "Spisska Nova Ves",
+      "street": "Banicka 1",
+      "category": "Lifestyle and Personal Development",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 5,
+      "shared": false,
+      "description": "Travel and Adventure.",
+      "dailyRate": 23
+    },
+    {
+      "title": "OldLove",
+      "city": "San Francisco",
+      "street": "Green street",
+      "category": "TheInfluenceHub",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 2,
+      "shared": false,
+      "description": "Travel and Adventure",
+      "dailyRate": 140
+      },
+      {
+      "title": "TownBoy",
+      "city": "San Francisco",
+      "street": "Union Street",
+      "category": "Fitness",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 3,
+      "shared": false,
+      "description": "Fitness",
+      "dailyRate": 89
+      },
+      {
+      "title": "TownGirl",
+      "city": "New York",
+      "street": "Long Island, Queens",
+      "category": "Bussiness",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 6,
+      "shared": false,
+      "description": "International Model",
+      "dailyRate": 189
+    },
+    {
+      "title": "CozyGirl",
+      "city": "New York",
+      "street": "Penn Station",
+      "category": "Geopolitica",
+      "image": "http://localhost:3001/assets/img/modelo3.jpg",
+      "bedrooms": 3,
+      "shared": true,
+      "description": "Building ideas",
+      "dailyRate": 68
+    }
+  ],
+  "users": [{
+    "username": "Test User",
+    "email": "test@gmail.com",
+    "password": "testtest"
+    },{
+    "username": "Test User1",
+    "email": "test1@gmail.com",
+    "password": "testtest1"
+    }
+  ]
+}
