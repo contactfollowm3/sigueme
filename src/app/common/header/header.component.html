@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand accent-text" routerLink="/tmers">tellMe <img src="favicon.ico" alt=""></a>
+
+    <div class="form-inline">
+      <div class="input-group">
+        <input #citySearch (keyup.enter)="search(citySearch.value)" class="form-control bwm-search" type="search"
+          placeholder="Search" aria-label="Search">
+        <button (click)="search(citySearch.value)" class="btn btn-outline-success btn-bwm-search"
+          type="button">Search</button>
+      </div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <ng-container *ngIf="!auth.isAuthenticated()">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/login">{{ 'HEADER.LOGIN' | translate }} <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register">{{ 'HEADER.REGISTER' | translate }}</a>
+          </li>
+         <!--  <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">{{ 'HEADER.CONTACT' | translate }}</a>
+          </li> -->
+        </ng-container>
+
+        <ng-container *ngIf="auth.isAuthenticated()">
+          <li class="nav-item">
+            <a class="nav-link fancy-username">{{ auth.getUsername() }}</a>
+          </li>
+          <div class="nav-item dropdown clickable" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" ngbDropdownToggle>
+              {{ 'HEADER.OWNER_SECTION' | translate }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+              <a class="dropdown-item" routerLink="/users/profile">{{ 'HEADER.PROFILE' | translate }}</a>
+              <a class="dropdown-item" routerLink="/tmers/new">{{ 'HEADER.CREATE_TMER' | translate }}</a>
+              <a class="dropdown-item" routerLink="/manage/tmers">{{ 'HEADER.MANAGE_TMERS' | translate }}</a>
+              <a class="dropdown-item" routerLink="/manage/bookings">{{ 'HEADER.MANAGE_BOOKINGS' | translate }}</a>
+            </div>
+          </div>
+          <li class="nav-item clickable">
+            <a class="nav-link" (click)="logout()">{{ 'HEADER.LOGOUT' | translate }}</a>
+          </li>
+        </ng-container>
+
+      </ul>
+    </div>
+  </div>
+</nav>

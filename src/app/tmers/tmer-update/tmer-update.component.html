@@ -1,0 +1,141 @@
+
+
+<section id="tmerDetails" *ngIf="tmer">
+    <!-- <h1>TMER UPDATE</h1> -->
+    <div class="upper-section">
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- <img src="{{tmer.image}}" alt=""> -->
+                <app-editable-image 
+                    [entity]="tmer" 
+                    [field]="'image'"  
+                    (entityUpdate)="updateTmer(tmer._id, $event)">
+                </app-editable-image>
+
+
+            </div>
+            <div class="col-md-6">
+                <!-- Will be replaced with map !!!! -->
+                <!-- <img src="{{tmer.image}}" alt=""> -->
+                <bwm-map 
+                    [locationSubject]="locationSubject"
+                    [location]="tmer.city + ', ' + tmer.street"></bwm-map>
+            </div>
+        </div>
+    </div>
+    <div class="details-section">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="tmer">
+                    <h2 class="tmer-type {{tmer.category}}">
+                        <!-- {{tmer.shared ? 'Available' : 'No available'}} -->
+                        <!-- {{tmer.category}} -->
+                         Availbale
+                            <app-editable-select 
+                            [entity]="tmer" 
+                            [field]="'shared'" 
+                            [options]="[ true, false ]"
+                            [style]="{'display': 'inline-block'}"
+                            [className]="'tmer-shared'"
+                            (entityUpdate)="updateTmer(tmer._id, $event)">
+                            </app-editable-select>
+
+                        <app-editable-select
+                            [entity]="tmer" 
+                            [field]="'category'" 
+                            [options]="tmerCategories"
+                            [className]="'tmer-category'"
+                            (entityUpdate)="updateTmer(tmer._id, $event)">
+                        </app-editable-select>
+                    </h2>
+                    <div class="tmer-owner">
+                        <img src="{{tmer.image}}" alt="">
+                        <span>{{tmer.user.username}}</span>
+                    </div>
+
+                   <!--  <h1 class="tmer-title">{{tmer.title}}</h1> -->   
+                        <app-editable-input 
+                           [entity]="tmer"
+                           [field]="'title'"
+                           [className]="'tmer-title'"
+                           (entityUpdate)="updateTmer(tmer._id, $event)" >
+                        </app-editable-input>
+
+
+
+
+                   <!-- <h2 class="tmer-city">{{tmer.city | uppercase}}</h2>  -->
+                       <app-editable-input 
+                        [entity]="tmer" 
+                        [field]="'city'"
+                        [transformView]="transformLocation"
+                        [className]="'tmer-city'"
+                        (entityUpdate)="updateTmer(tmer._id, $event)">
+                        </app-editable-input>
+
+                        <app-editable-input 
+                        [entity]="tmer" 
+                        [field]="'street'"
+                        [transformView]="transformLocation" 
+                        [className]="'tmer-street'"
+                        (entityUpdate)="updateTmer(tmer._id, $event)">
+                        </app-editable-input>
+
+
+
+                    <div class="tmer-room-info">
+                        <span><i class="fa fa-globe"></i>
+                            <app-editable-input 
+                            [entity]="tmer" 
+                            [field]="'bedrooms'" 
+                            [type]="'number'"
+                            [style]="{'display': 'inline-block'}"
+                            [className]="'tmer-bedrooms'"
+                            (entityUpdate)="updateTmer(tmer._id, $event)">
+                            </app-editable-input>Languages
+                        </span>
+
+                    </div>
+                   <!--  <p class="tmer-description">
+                        {{tmer.description}}
+                    </p> -->
+
+                    <app-editable-textarea
+                    [entity]="tmer" 
+                    [field]="'description'" 
+                    [className]="'tmer-description'"
+                    [rows]="'6'"
+                    [cols]="'50'"
+                    (entityUpdate)="updateTmer(tmer._id, $event)">
+                    </app-editable-textarea>
+
+
+                    <hr>
+                    <div class="tmer-assets">
+                        <h3 class="title">Assets</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span><i class="fa fa-asterisk"></i> Spontaneous</span>
+                                <span><i class="fa fa-thermometer"></i> Cool</span>
+                                <span><i class="fa-regular fa-glasses"></i> Easy-Person</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span><i class="fa fa-cube"></i> Keen</span>
+                                <span><i class="fa fa-cube"></i> Friendly</span>
+                                <span><i class="fa fa-cube"></i> Sportive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <bwm-tmer-detail-booking [tmer]="tmer">
+                </bwm-tmer-detail-booking>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+

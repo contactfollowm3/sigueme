@@ -1,0 +1,160 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "ملف المستخدم",
+    "USERNAME": "اسم المستخدم",
+    "EMAIL": "البريد الإلكتروني",
+    "SAVE": "حفظ",
+    "RESET": "إعادة تعيين"
+  },
+  "SETTINGS": {
+    "TITLE": "الإعدادات",
+    "DARK_MODE": "الوضع المظلم",
+    "LANGUAGE": "اللغة",
+    "TIMEZONE": "المنطقة الزمنية",
+    "SAVE": "حفظ التفضيلات"
+  },
+  "PASSWORD": {
+  "CURRENT": "كلمة المرور الحالية",
+  "NEW": "كلمة المرور الجديدة",
+  "CONFIRM": "تأكيد كلمة المرور الجديدة",
+  "UPDATE": "تغيير كلمة المرور",
+  "UPDATE_TITLE": "تحديث كلمة المرور الخاصة بك"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "تم حفظ التفضيلات!",
+    "PREFERENCES_FAILED": "خطأ في حفظ التفضيلات.",
+    "PASSWORD_UPDATED": "تم تحديث كلمة المرور بنجاح!",
+    "PASSWORD_UPDATE_ERROR": "خطأ في تحديث كلمة المرور"
+  },
+  "HEADER": {
+    "LOGIN": "تسجيل الدخول",
+    "REGISTER": "تسجيل",
+    "CONTACT": "اتصال",
+    "OWNER_SECTION": "قسم المالك",
+    "PROFILE": "الملف الشخصي",
+    "CREATE_TMER": "إنشاء Tmer",
+    "MANAGE_TMERS": "إدارة Tmers",
+    "MANAGE_BOOKINGS": "إدارة الحجوزات",
+    "LOGOUT": "تسجيل الخروج"
+  },
+  "TMER_LIST": {
+    "TITLE": "أنت على اتصال، في جميع أنحاء العالم"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "الفئة",
+    "AVAILABLE": "متاح",
+    "NOT_AVAILABLE": "غير متاح",
+    "USERNAME": "اسم المستخدم",
+    "TITLE": "العنوان",
+    "CITY": "المدينة",
+    "DESCRIPTION": "الوصف",
+    "ASSETS": "الصفات",
+    "SPONTANEOUS": "عفوي",
+    "COOL": "هادئ",
+    "EASY_PERSON": "شخص سهل",
+    "KEEN": "متحمس",
+    "FRIENDLY": "ودود",
+    "SPORTIVE": "رياضي",
+    "LANGUAGES": "اللغات",
+    "PHOTOS": "الصور"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "في الساعة",
+    "DATES": "التواريخ",
+    "GUESTS": "الضيوف",
+    "RESERVE_BUTTON": "احجز الآن",
+    "LOGIN_PROMPT": "سجل الدخول لحجز هذا الشخص اليوم",
+    "NOTE_TITLE": "ملاحظة الحجز",
+    "NOTE_TEXT": "سيؤكد المضيف حجزك بمجرد إتمام الدفع.",
+    "CONFIRM_TITLE": "تأكيد الحجز",
+    "HOURS": "ساعات",
+    "PER_HOUR_PRICE": "في الساعة",
+    "TOTAL_GUESTS": "الضيوف",
+    "PRICE": "السعر",
+    "CONFIRM": "تأكيد",
+    "CLOSE": "إغلاق"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "الفئة",
+    "PRICE_PER_SESSION": "السعر لكل جلسة",
+    "FREE_CANCELLATION": "إلغاء مجاني"
+  },
+  "LOGIN": {
+    "TITLE": "تسجيل الدخول",
+    "EMAIL": "البريد الإلكتروني",
+    "PASSWORD": "كلمة المرور",
+    "SUBMIT": "إرسال",
+    "INVALID_EMAIL": "البريد الإلكتروني مطلوب.",
+    "INVALID_PASSWORD": "كلمة المرور مطلوبة.",
+    "EMAIL_PATTERN": "يجب أن يكون البريد الإلكتروني صالحًا.",
+    "CATCHPHRASE": "كعضو لدينا، لديك إمكانية الوصول إلى أكثر الأشخاص روعة في العالم.",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "بيانات الاعتماد غير صالحة. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "تسجيل",
+    "USERNAME": "اسم المستخدم",
+    "EMAIL": "البريد الإلكتروني",
+    "PASSWORD": "كلمة المرور",
+    "CONFIRM_PASSWORD": "تأكيد كلمة المرور",
+    "SUBMIT": "إرسال",
+    "USERNAME_REQUIRED": "اسم المستخدم مطلوب.",
+    "EMAIL_REQUIRED": "البريد الإلكتروني مطلوب.",
+    "PASSWORD_REQUIRED": "كلمة المرور مطلوبة.",
+    "PASSWORD_CONFIRMATION_REQUIRED": "تأكيد كلمة المرور مطلوب.",
+    "PASSWORD_MISMATCH": "كلمات المرور غير متطابقة.",
+    "SUCCESS_MESSAGE": "تم التسجيل بنجاح! يمكنك الآن تسجيل الدخول.",
+    "CATCHPHRASE": "كعضو لدينا، لديك إمكانية الوصول إلى أكثر الأشخاص روعة في العالم."
+  },
+   "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "حجوزاتي",
+    "PENDING_BOOKINGS": "حجوزاتي المعلقة",
+    "DELETED_TMER": "Tmer محذوف",
+    "PRICE": "السعر",
+    "REVENUE": "الإيرادات",
+    "STATUS": "الحالة",
+    "CONFIRM": "تأكيد",
+    "DECLINE": "رفض",
+    "NO_BOOKINGS": "ليس لديك أي حجوزات. انتقل إلى قسم tmers واحجز شخصًا للتحدث معه اليوم.",
+    "NO_PENDING": "ليس لديك أي حجوزات معلقة!",
+    "AVAILABLE_TMERS": "Tmers المتاحة",
+    "BOOKING_MADE_BY": "الحجز من قبل",
+    "UNKNOWN_USER": "مستخدم غير معروف",
+    "GO_TO_TMER": "انتقل إلى Tmer"
+  },
+   "TMER_CREATE": {
+    "TITLE": "إنشاء TellMe",
+    "FORM": {
+      "TITLE": "العنوان",
+      "CITY": "المدينة",
+      "STREET": "الشارع",
+      "CATEGORY": "الفئة",
+      "AGE": "العمر",
+      "DESCRIPTION": "الوصف",
+      "DAILY_RATE": "السعر اليومي",
+      "SHARED": "مشترك",
+      "SUBMIT": "إرسال"
+    },
+    "CATCHPHRASE": "المئات من الأشخاص الرائعين على بعد نقرات قليلة.",
+    "ERRORS": {
+      "UNKNOWN": "حدث خطأ غير معروف."
+    }
+  },
+  "MANAGE_TMER": {
+    "TITLE": "Tmers الخاصة بي",
+    "GO_TO_TMER": "انتقل إلى Tmer",
+    "CREATED_AT": "تم الإنشاء في",
+    "DELETE": "حذف",
+    "EDIT": "تعديل",
+    "CONFIRM_MESSAGE": "هل تؤكد الحذف؟",
+    "CONFIRM_YES": "نعم",
+    "CONFIRM_NO": "لا",
+    "NO_TMERS": "ليس لديك أي Tmer تم إنشاؤه حاليًا. إذا كنت ترغب في الإعلان عن عرضك ، يرجى اتباع هذا الرابط.",
+    "REGISTER_TMER": "تسجيل Tmer",
+    "TOAST": {
+      "SUCCESS_DELETE": "تم حذف Tmer بنجاح!",
+      "ERROR_DELETE": "لا يمكن حذف Tmer مع حجوزات نشطة!"
+    }
+  }
+}

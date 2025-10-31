@@ -1,0 +1,18 @@
+<!-- This is child component from tmer-list.component -->
+<a [routerLink]="['/tmers', tmer._id]">
+  <div class="card bwm-card">
+    <img class="card-img-top" [src]="tmer.image" alt=""> 
+
+    <div class="card-block">
+      <h6 class="card-subtitle {{tmer.category}}">
+        <!-- Translate the category and city fields -->
+        {{ 'TMER_LIST_ITEM.CATEGORY' | translate }}: {{ tmer.category }} &#183; {{ tmer.city  }}
+      </h6>
+      <h4 class="card-title">{{ tmer.title }}</h4>
+      <p class="card-text">
+        {{  'TMER_LIST_ITEM.PRICE_PER_SESSION' | translate }}: ${{ tmer.dailyRate }} {{
+        'TMER_LIST_ITEM.FREE_CANCELLATION' | translate }}
+      </p>
+    </div>
+  </div>
+</a>

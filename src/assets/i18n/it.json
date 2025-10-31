@@ -1,0 +1,160 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "Profilo Utente",
+    "USERNAME": "Nome utente",
+    "EMAIL": "Email",
+    "SAVE": "Salva",
+    "RESET": "Reimposta"
+  },
+  "SETTINGS": {
+    "TITLE": "Impostazioni",
+    "DARK_MODE": "Modalità scura",
+    "LANGUAGE": "Lingua",
+    "TIMEZONE": "Fuso orario",
+    "SAVE": "Salva preferenze"
+  },
+  "PASSWORD": {
+  "CURRENT": "Password attuale",
+  "NEW": "Nuova password",
+  "CONFIRM": "Conferma nuova password",
+  "UPDATE": "Cambia password",
+  "UPDATE_TITLE": "Aggiorna la tua password"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "Preferenze salvate!",
+    "PREFERENCES_FAILED": "Errore nel salvare le preferenze.",
+    "PASSWORD_UPDATED": "Password aggiornata con successo!",
+    "PASSWORD_UPDATE_ERROR": "Errore nell'aggiornamento della password"
+  },
+  "HEADER": {
+    "LOGIN": "Accedi",
+    "REGISTER": "Registrati",
+    "CONTACT": "Contatto",
+    "OWNER_SECTION": "Sezione proprietario",
+    "PROFILE": "Profilo",
+    "CREATE_TMER": "Crea Tmer",
+    "MANAGE_TMERS": "Gestisci Tmers",
+    "MANAGE_BOOKINGS": "Gestisci prenotazioni",
+    "LOGOUT": "Esci"
+  },
+  "TMER_LIST": {
+    "TITLE": "Sei in contatto, in tutto il mondo"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "Categoria",
+    "AVAILABLE": "Disponibile",
+    "NOT_AVAILABLE": "Non disponibile",
+    "USERNAME": "Nome utente",
+    "TITLE": "Titolo",
+    "CITY": "Città",
+    "DESCRIPTION": "Descrizione",
+    "ASSETS": "Qualità",
+    "SPONTANEOUS": "Spontaneo",
+    "COOL": "Tranquillo",
+    "EASY_PERSON": "Persona facile",
+    "KEEN": "Entusiasta",
+    "FRIENDLY": "Amichevole",
+    "SPORTIVE": "Sportivo",
+    "LANGUAGES": "Lingue",
+    "PHOTOS": "Foto"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "all'ora",
+    "DATES": "Date",
+    "GUESTS": "Ospiti",
+    "RESERVE_BUTTON": "Prenota ora",
+    "LOGIN_PROMPT": "Accedi per prenotare questa persona oggi",
+    "NOTE_TITLE": "Nota di prenotazione",
+    "NOTE_TEXT": "L'host confermerà la tua prenotazione una volta effettuato il pagamento.",
+    "CONFIRM_TITLE": "Conferma prenotazione",
+    "HOURS": "ore",
+    "PER_HOUR_PRICE": "all'ora",
+    "TOTAL_GUESTS": "Ospiti",
+    "PRICE": "Prezzo",
+    "CONFIRM": "Conferma",
+    "CLOSE": "Chiudi"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "Categoria",
+    "PRICE_PER_SESSION": "Prezzo per sessione",
+    "FREE_CANCELLATION": "Cancellazione gratuita"
+  },
+  "LOGIN": {
+    "TITLE": "Accedi",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "SUBMIT": "Invia",
+    "INVALID_EMAIL": "Email obbligatoria.",
+    "INVALID_PASSWORD": "Password obbligatoria.",
+    "EMAIL_PATTERN": "L'email deve essere valida.",
+    "CATCHPHRASE": "Come nostro membro, hai accesso alle persone più incredibili del mondo.",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "Credenziali non valide. Riprova."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Registrati",
+    "USERNAME": "Nome utente",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Conferma password",
+    "SUBMIT": "Invia",
+    "USERNAME_REQUIRED": "Nome utente obbligatorio.",
+    "EMAIL_REQUIRED": "Email obbligatoria.",
+    "PASSWORD_REQUIRED": "Password obbligatoria.",
+    "PASSWORD_CONFIRMATION_REQUIRED": "Conferma password obbligatoria.",
+    "PASSWORD_MISMATCH": "Le password non corrispondono.",
+    "SUCCESS_MESSAGE": "Registrazione completata! Ora puoi accedere.",
+    "CATCHPHRASE": "Come nostro membro, hai accesso alle persone più incredibili del mondo."
+  },
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "Le mie prenotazioni",
+    "PENDING_BOOKINGS": "Le mie prenotazioni in sospeso",
+    "DELETED_TMER": "Tmer eliminato",
+    "PRICE": "Prezzo",
+    "REVENUE": "Entrate",
+    "STATUS": "Stato",
+    "CONFIRM": "Conferma",
+    "DECLINE": "Rifiuta",
+    "NO_BOOKINGS": "Non hai prenotazioni create. Vai alla sezione tmers e prenota una persona oggi per parlare.",
+    "NO_PENDING": "Non hai prenotazioni in sospeso!",
+    "AVAILABLE_TMERS": "Tmers disponibili",
+    "BOOKING_MADE_BY": "Prenotazione fatta da",
+    "UNKNOWN_USER": "Utente sconosciuto",
+    "GO_TO_TMER": "Vai a Tmer"
+  },
+  "TMER_CREATE": {
+    "TITLE": "Crea un TellMe",
+    "FORM": {
+      "TITLE": "Titolo",
+      "CITY": "Città",
+      "STREET": "Via",
+      "CATEGORY": "Categoria",
+      "AGE": "Età",
+      "DESCRIPTION": "Descrizione",
+      "DAILY_RATE": "Tariffa giornaliera",
+      "SHARED": "Condiviso",
+      "SUBMIT": "Invia"
+    },
+    "CATCHPHRASE": "Centinaia di persone fantastiche a portata di pochi clic.",
+    "ERRORS": {
+      "UNKNOWN": "Si è verificato un errore sconosciuto."
+    }
+  },
+  "MANAGE_TMER": {
+    "TITLE": "I miei Tmers",
+    "GO_TO_TMER": "Vai a Tmer",
+    "CREATED_AT": "Creato il",
+    "DELETE": "Elimina",
+    "EDIT": "Modifica",
+    "CONFIRM_MESSAGE": "Confermi l'eliminazione?",
+    "CONFIRM_YES": "Sì",
+    "CONFIRM_NO": "No",
+    "NO_TMERS": "Attualmente non hai creato alcun Tmer. Se vuoi pubblicizzare la tua offerta, segui questo link.",
+    "REGISTER_TMER": "Registra Tmer",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmer eliminato con successo!",
+      "ERROR_DELETE": "Impossibile eliminare Tmer con prenotazioni attive!"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+<div class="photo-upload-section card mt-4">
+    <div class="card-header">
+        <h3>Upload Additional Photos for This Tmer</h3>
+    </div>
+    <div class="card-body">
+        <div class="file-input-wrapper mb-3">
+            <label class="btn btn-bwm red-button">
+                <span>Select Photos</span>
+                <input type="file" accept="image/*" multiple (change)="processFiles($event)" />
+            </label>
+            <button class="btn btn-success ms-2" (click)="uploadPhotos()"
+                [disabled]="selectedFiles.length === 0 || isUploading">
+                <span *ngIf="!isUploading">Upload All New Photos ({{ selectedFiles.length }})</span>
+                <span *ngIf="isUploading">Uploading...</span>
+            </button>
+        </div>
+
+        <div *ngIf="selectedFiles.length > 0" class="mb-4">
+            <h4>New Photos to Upload:</h4>
+            <div class="row">
+                <div *ngFor="let fileSnippet of selectedFiles; let i = index" class="col-md-3 col-sm-4 mb-3">
+                    <div class="photo-preview-card card">
+                        <img [src]="fileSnippet.url" class="card-img-top photo-preview-img" alt="Photo preview" />
+                        <div class="card-body">
+                            <p class="card-text text-truncate">{{ fileSnippet.file?.name }}</p>
+                            <div *ngIf="fileSnippet.status === 'PENDING'" class="progress mt-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    [style.width]="fileSnippet.progress + '%'"
+                                    [attr.aria-valuenow]="fileSnippet.progress" aria-valuemin="0" aria-valuemax="100">
+                                    {{ fileSnippet.progress }}%
+                                </div>
+                            </div>
+                            <div *ngIf="fileSnippet.status === 'FAIL'" class="alert alert-danger p-1 mt-2 text-center">
+                                Upload Failed</div>
+                            <button class="btn btn-sm btn-danger mt-2 w-100" (click)="removeSelectedFile(i)"
+                                [disabled]="isUploading">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr *ngIf="selectedFiles.length > 0 && uploadedPhotos.length > 0" />
+
+        <div *ngIf="uploadedPhotos.length > 0">
+            <h4>Existing Photos:</h4>
+            <div class="row">
+                <div *ngFor="let photo of uploadedPhotos" class="col-md-3 col-sm-4 mb-3">
+                    <div class="photo-card card">
+                        <img [src]="photo.url" class="card-img-top uploaded-photo-img" alt="Uploaded photo" />
+                        <div class="card-body text-center">
+                            <button class="btn btn-sm btn-danger w-100" (click)="deleteUploadedPhoto(photo)"
+                                [disabled]="isUploading">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="selectedFiles.length === 0 && uploadedPhotos.length === 0 && !isUploading"
+            class="alert alert-info text-center mt-3">
+            No photos selected or uploaded for this Tmer yet. Use "Select Photos" to add some!
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--almost wroking -->
+<!-- <div class="photo-upload-section card mt-4">
+    <div class="card-header">
+        <h3>Upload Additional Photos for This Tmer</h3>
+    </div>
+    <div class="card-body">
+        <div class="file-input-wrapper mb-3">
+            <label class="btn btn-bwm red-button">
+                <span>Select Photos</span>
+                <input type="file" accept="image/*" multiple (change)="processFiles($event)" />
+            </label>
+            <button class="btn btn-success ms-2" (click)="uploadPhotos()"
+                [disabled]="selectedFiles.length === 0 || isUploading">
+                <span *ngIf="!isUploading">Upload All New Photos ({{ selectedFiles.length }})</span>
+                <span *ngIf="isUploading">Uploading...</span>
+            </button>
+        </div>
+
+        <div *ngIf="selectedFiles.length > 0" class="mb-4">
+            <h4>New Photos to Upload:</h4>
+            <div class="row">
+                <div *ngFor="let fileSnippet of selectedFiles; let i = index" class="col-md-3 col-sm-4 mb-3">
+                    <div class="photo-preview-card card">
+                        <img [src]="fileSnippet.url" class="card-img-top photo-preview-img" alt="Photo preview" />
+                        <div class="card-body">
+                            <p class="card-text text-truncate">{{ fileSnippet.file?.name }}</p>
+                            <div *ngIf="fileSnippet.status === 'PENDING'" class="progress mt-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    [style.width]="fileSnippet.progress + '%'"
+                                    [attr.aria-valuenow]="fileSnippet.progress" aria-valuemin="0" aria-valuemax="100">
+                                    {{ fileSnippet.progress }}%
+                                </div>
+                            </div>
+                            <div *ngIf="fileSnippet.status === 'FAIL'" class="alert alert-danger p-1 mt-2 text-center">
+                                Upload Failed</div>
+                            <button class="btn btn-sm btn-danger mt-2 w-100" (click)="removeSelectedFile(i)"
+                                [disabled]="isUploading">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr *ngIf="selectedFiles.length > 0 && uploadedPhotos.length > 0" />
+
+        <div *ngIf="uploadedPhotos.length > 0">
+            <h4>Existing Photos:</h4>
+            <div class="row">
+                <div *ngFor="let photo of uploadedPhotos" class="col-md-3 col-sm-4 mb-3">
+                    <div class="photo-card card">
+                        <img [src]="photo.url" class="card-img-top uploaded-photo-img" alt="Uploaded photo" />
+                        <div class="card-body text-center">
+                            <button class="btn btn-sm btn-danger w-100" (click)="deleteUploadedPhoto(photo)"
+                                [disabled]="isUploading">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="selectedFiles.length === 0 && uploadedPhotos.length === 0 && !isUploading"
+            class="alert alert-info text-center mt-3">
+            No photos selected or uploaded for this Tmer yet. Use "Select Photos" to add some!
+        </div>
+    </div>
+</div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="photo-upload">
+    <label class="btn btn-bwm red-button">
+        <span>Select Images</span>
+        <input type="file" accept="image/*" multiple (change)="processFiles($event)" />
+    </label>
+
+    <div *ngFor="let file of selectedFiles; let i = index" class="mb-4">
+        <image-cropper *ngIf="!file.src" [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
+            [aspectRatio]="4 / 3" [resizeToWidth]="850" format="jpeg" (imageCropped)="imageCropped($event, i)">
+        </image-cropper>
+
+        <div *ngIf="file.src" class="img-preview-container">
+            <div class="img-preview" [ngStyle]="{ 'background-image': 'url(' + file.src + ')' }"></div>
+
+            <div *ngIf="file.pending" class="img-loading-overlay">
+                <div class="img-spinning-circle"></div>
+            </div>
+
+            <div *ngIf="file.status === 'OK'" class="alert alert-success">Uploaded</div>
+            <div *ngIf="file.status === 'FAIL'" class="alert alert-danger">Failed</div>
+        </div>
+    </div>
+
+    <button class="btn btn-success" (click)="uploadAll()">Upload All</button>
+
+    <div class="uploaded-section mt-5">
+        <h5>Uploaded Images</h5>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let img of uploadedImages; let i = index">
+                <div class="card">
+                    <img [src]="img" class="card-img-top" alt="Uploaded Image" />
+                    <div class="card-body text-center">
+                        <button class="btn btn-danger btn-sm" (click)="removeImage(img, i)">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->

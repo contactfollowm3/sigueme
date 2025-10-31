@@ -1,0 +1,115 @@
+$main-color: #007bff; // Define the main color variable
+
+#userRentals {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-block {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .btn-bwm {
+        font-size: 12px;
+        color: white;
+        padding: 10px 15px;
+    }
+
+    .btn-delete {
+        float: right;
+        font-size: 10px;
+    }
+
+    .btn-edit {
+        font-size: 10px;
+        color: white;
+        padding: 10px 15px;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .btn-success,
+    .btn-danger {
+        font-size: 12px;
+    }
+
+    .card-footer {
+        font-size: 12px;
+
+        p {
+            display: inline-block;
+            line-height: 40px;
+            margin: 0;
+        }
+
+        .confirm-message {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    }
+
+    .btn-bookings {
+        border-color: $main-color;
+        background-color: transparent;
+        color: $main-color;
+
+        &:hover,
+        &:focus {
+            border-color: $main-color !important;
+            background-color: transparent !important;
+            color: $main-color !important;
+        }
+    }
+
+    /* Modify the button style to use a similar shade of blue */
+    .btn-ghost,
+    .btn-bwm {
+        background-color: transparent;
+        /* Set background to transparent */
+        border: 1px solid #007bff;
+        /* Add blue border */
+        color: #007bff;
+        /* Set text color to blue */
+        transition: background-color 0.3s, color 0.3s;
+        /* Add transition for color change */
+        margin-right: 10px;
+        /* Add margin to create space between buttons */
+    }
+
+    .btn-ghost:hover,
+    .btn-bwm:hover {
+        background-color: #007bff;
+        /* Change background to blue on hover */
+        color: white;
+        /* Change text color to white on hover */
+    }
+
+    // Additional styles for the button within the alert-warning class
+    .alert-warning {
+        .btn-bwm {
+            font-size: 14px;
+            padding: 15px;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+        }
+    }
+}
+
+.bookings-inner-container {
+    p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+}

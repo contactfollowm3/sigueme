@@ -1,0 +1,160 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "ユーザープロフィール",
+    "USERNAME": "ユーザー名",
+    "EMAIL": "メールアドレス",
+    "SAVE": "保存",
+    "RESET": "リセット"
+  },
+  "SETTINGS": {
+    "TITLE": "設定",
+    "DARK_MODE": "ダークモード",
+    "LANGUAGE": "言語",
+    "TIMEZONE": "タイムゾーン",
+    "SAVE": "設定を保存"
+  },
+ "PASSWORD": {
+  "CURRENT": "現在のパスワード",
+  "NEW": "新しいパスワード",
+  "CONFIRM": "新しいパスワードを確認",
+  "UPDATE": "パスワードを変更",
+  "UPDATE_TITLE": "パスワードを更新"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "設定を保存しました！",
+    "PREFERENCES_FAILED": "設定の保存に失敗しました。",
+    "PASSWORD_UPDATED": "パスワードを更新しました！",
+    "PASSWORD_UPDATE_ERROR": "パスワードの更新に失敗しました"
+  },
+  "HEADER": {
+    "LOGIN": "ログイン",
+    "REGISTER": "登録",
+    "CONTACT": "連絡先",
+    "OWNER_SECTION": "オーナーセクション",
+    "PROFILE": "プロフィール",
+    "CREATE_TMER": "Tmerを作成",
+    "MANAGE_TMERS": "Tmerを管理",
+    "MANAGE_BOOKINGS": "予約を管理",
+    "LOGOUT": "ログアウト"
+  },
+  "TMER_LIST": {
+    "TITLE": "あなたは世界中とつながっています"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "カテゴリー",
+    "AVAILABLE": "利用可能",
+    "NOT_AVAILABLE": "利用不可",
+    "USERNAME": "ユーザー名",
+    "TITLE": "タイトル",
+    "CITY": "都市",
+    "DESCRIPTION": "説明",
+    "ASSETS": "資質",
+    "SPONTANEOUS": "自発的",
+    "COOL": "クール",
+    "EASY_PERSON": "気楽な人",
+    "KEEN": "熱心",
+    "FRIENDLY": "友好的",
+    "SPORTIVE": "スポーティ",
+    "LANGUAGES": "言語",
+    "PHOTOS": "写真"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "時間あたり",
+    "DATES": "日付",
+    "GUESTS": "ゲスト",
+    "RESERVE_BUTTON": "今すぐ予約",
+    "LOGIN_PROMPT": "今日この人を予約するにはログインしてください",
+    "NOTE_TITLE": "予約メモ",
+    "NOTE_TEXT": "支払いが完了すると、ホストが予約を確認します。",
+    "CONFIRM_TITLE": "予約を確認",
+    "HOURS": "時間",
+    "PER_HOUR_PRICE": "時間あたり",
+    "TOTAL_GUESTS": "ゲスト",
+    "PRICE": "価格",
+    "CONFIRM": "確認",
+    "CLOSE": "閉じる"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "カテゴリー",
+    "PRICE_PER_SESSION": "セッションあたりの価格",
+    "FREE_CANCELLATION": "無料キャンセル"
+  },
+  "LOGIN": {
+    "TITLE": "ログイン",
+    "EMAIL": "メールアドレス",
+    "PASSWORD": "パスワード",
+    "SUBMIT": "送信",
+    "INVALID_EMAIL": "メールアドレスが必要です。",
+    "INVALID_PASSWORD": "パスワードが必要です。",
+    "EMAIL_PATTERN": "有効なメールアドレスを入力してください。",
+    "CATCHPHRASE": "会員になると、世界中の素晴らしい人々にアクセスできます。",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "無効な認証情報です。もう一度お試しください。"
+    }
+  },
+  "REGISTER": {
+    "TITLE": "登録",
+    "USERNAME": "ユーザー名",
+    "EMAIL": "メールアドレス",
+    "PASSWORD": "パスワード",
+    "CONFIRM_PASSWORD": "パスワードを確認",
+    "SUBMIT": "送信",
+    "USERNAME_REQUIRED": "ユーザー名が必要です。",
+    "EMAIL_REQUIRED": "メールアドレスが必要です。",
+    "PASSWORD_REQUIRED": "パスワードが必要です。",
+    "PASSWORD_CONFIRMATION_REQUIRED": "パスワードの確認が必要です。",
+    "PASSWORD_MISMATCH": "パスワードが一致しません。",
+    "SUCCESS_MESSAGE": "登録が完了しました！ログインできます。",
+    "CATCHPHRASE": "会員になると、世界中の素晴らしい人々にアクセスできます。"
+  },
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "私の予約",
+    "PENDING_BOOKINGS": "保留中の予約",
+    "DELETED_TMER": "削除されたTmer",
+    "PRICE": "価格",
+    "REVENUE": "収益",
+    "STATUS": "状態",
+    "CONFIRM": "確認",
+    "DECLINE": "拒否",
+    "NO_BOOKINGS": "予約がありません。Tmersセクションに移動して、今日話す人を予約してください。",
+    "NO_PENDING": "保留中の予約はありません！",
+    "AVAILABLE_TMERS": "利用可能なTmers",
+    "BOOKING_MADE_BY": "予約作成者",
+    "UNKNOWN_USER": "不明なユーザー",
+    "GO_TO_TMER": "Tmerへ移動"
+  },
+   "TMER_CREATE": {
+    "TITLE": "TellMeを作成",
+    "FORM": {
+      "TITLE": "タイトル",
+      "CITY": "都市",
+      "STREET": "通り",
+      "CATEGORY": "カテゴリー",
+      "AGE": "年齢",
+      "DESCRIPTION": "説明",
+      "DAILY_RATE": "日額料金",
+      "SHARED": "共有",
+      "SUBMIT": "送信"
+    },
+    "CATCHPHRASE": "数回のクリックで数百人の素晴らしい人々とつながれます。",
+    "ERRORS": {
+      "UNKNOWN": "不明なエラーが発生しました。"
+    }
+  },
+  "MANAGE_TMER": {
+    "TITLE": "私のTmers",
+    "GO_TO_TMER": "Tmerへ移動",
+    "CREATED_AT": "作成日",
+    "DELETE": "削除",
+    "EDIT": "編集",
+    "CONFIRM_MESSAGE": "削除しますか？",
+    "CONFIRM_YES": "はい",
+    "CONFIRM_NO": "いいえ",
+    "NO_TMERS": "現在作成されているTmerはありません。オファーを宣伝したい場合は、このリンクに従ってください。",
+    "REGISTER_TMER": "Tmerを登録",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmerを削除しました！",
+      "ERROR_DELETE": "アクティブな予約があるTmerは削除できません！"
+    }
+  }
+}

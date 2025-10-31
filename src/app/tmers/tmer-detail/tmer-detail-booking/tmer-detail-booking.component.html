@@ -1,0 +1,70 @@
+<div class="booking">
+    <h3 class="booking-price">
+        ${{tmer?.dailyRate}} <span class="booking-per-night">{{ 'TMER_BOOKING.PER_HOUR' | translate }}</span>
+    </h3>
+    <hr />
+    <ng-container *ngIf="auth.isAuthenticated()">
+        <form #bookingFomr="ngForm">
+            <label>{{ 'TMER_BOOKING.DATES' | translate }}</label>
+            <input type="text" class="form-control daterangepicker-input" name="daterangeInput" daterangepicker
+                [options]="options" (selected)="selectedDate($event, daterange)" />
+            <div class="form-group">
+                <label for="guests">{{ 'TMER_BOOKING.GUESTS' | translate }}</label>
+                <input [(ngModel)]="newBooking.guests" name="guests" type="number" class="form-control" id="guests"
+                    required />
+            </div>
+        </form>
+        <button (click)="openConfirmModal(content)"
+            [disabled]="!bookingFomr.form.valid || !newBooking.startAt || !newBooking.endAt"
+            class="btn btn-danger btn-confirm btn-block">
+            {{ 'TMER_BOOKING.RESERVE_BUTTON' | translate }}
+        </button>
+        <hr />
+    </ng-container>
+
+    <div *ngIf="!auth.isAuthenticated()" class="should-login">
+        <div class="alert alert-danger" role="alert">
+            <a routerLink="/login" class="alert-link text-white">
+                {{ 'TMER_BOOKING.LOGIN_PROMPT' | translate }}
+            </a>
+        </div>
+    </div>
+
+    <p class="booking-note-title">{{ 'TMER_BOOKING.NOTE_TITLE' | translate }}</p>
+    <p class="booking-note-text">{{ 'TMER_BOOKING.NOTE_TEXT' | translate }}</p>
+</div>
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">
+            {{ 'TMER_BOOKING.CONFIRM_TITLE' | translate }}
+            <p>{{newBooking.startAt}} to {{newBooking.endAt}}</p>
+        </h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <em>{{newBooking.hours}}</em> {{ 'TMER_BOOKING.HOURS' | translate }} /
+        <em>{{tmer?.dailyRate}}</em> {{ 'TMER_BOOKING.PER_HOUR' | translate }}
+        <p>{{ 'TMER_BOOKING.GUESTS' | translate }}: <em>{{newBooking.guests}}</em></p>
+        <p>{{ 'TMER_BOOKING.PRICE' | translate }}: <em>{{newBooking.totalPrice}}$</em></p>
+
+        <app-payment (paymentConfirmed)="onPaymentConfirmed($event)"></app-payment>
+
+        <div *ngIf="errors && errors.length > 0" class="alert alert-danger modal-error">
+            <p *ngFor="let error of errors">{{error.detail}}</p>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button [disabled]="!newBooking.paymentToken" *ngIf="errors.length === 0" type="button" class="btn btn-bwm"
+            (click)="createBooking()">
+            {{ 'TMER_BOOKING.CONFIRM' | translate }}
+        </button>
+        <button type="button" class="btn btn-bwm" (click)="c('Save click')">
+            {{ 'TMER_BOOKING.CLOSE' | translate }}
+        </button>
+    </div>
+</ng-template>

@@ -1,0 +1,71 @@
+@import 'src/styles/_variables';
+
+
+.navbar {
+  padding: 20px;
+  margin-bottom: 40px;
+
+
+  .bwm-search {
+    height: 50px;
+    width: 300px;
+  }
+
+    .accent-text {
+      color: #ff9900 !important;
+    }
+
+  .navbar-brand {
+    margin-right: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: $main-color;
+    font-weight: 500;
+  }
+/* Assuming the favicon.ico is applied to the .navbar-brand */
+.navbar-brand img {
+  width: 60px;
+  /* Adjust the width as needed */
+  height: 60px;
+  /* Adjust the height as needed */
+  border-radius: 50%;
+  /* Make the image circular */
+}
+
+
+  .nav-item {
+    font-size: 20px;
+  }
+
+
+  .btn-bwm-search {
+    border-color: $main-color;
+    color: $main-color;
+
+
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+      border-color: $main-color !important;
+      color: $main-color !important;
+      box-shadow: none;
+    }
+
+
+    .dropdown-item {
+      font-size: 14px;
+      &:active, &:focus {
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+.fancy-username {
+  color:green;
+  /* Set the text color to blue */
+  font-family:Arial, sans-serif;
+  /* Use a cursive font */
+  font-size: 20px;
+  /* Set the font size to your preference */
+  /* You can add more styles to make it fancier */
+}

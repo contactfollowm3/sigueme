@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'css-star-rating/scss/star-rating';
+@import 'src/styles/_variables';
+@import 'src/styles/_tmer-detail';
+
+/* ================ STAR RATING ULTIMATE FIX ================ */
+star-rating {
+  --star-size: 24px;
+  --checked-color: #ffc107;
+  --unchecked-color: #e4e5e9;
+  --hover-color: #ffc107;
+
+  .star-container {
+    display: inline-block;
+    font-size: var(--star-size);
+    line-height: 1;
+
+    .star {
+      display: inline-block;
+      margin: 0 2px;
+      position: relative;
+      cursor: pointer;
+      width: var(--star-size);
+      height: var(--star-size);
+
+      i {
+        display: block;
+        font-style: normal;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        &.filled {
+          color: var(--checked-color);
+          z-index: 2;
+        }
+
+        &:not(.filled) {
+          color: var(--unchecked-color);
+          z-index: 1;
+        }
+      }
+
+      &:hover {
+        i {
+          color: var(--hover-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/* ================ END STAR RATING FIX ================ */
+
+/* Rest of your existing styles below */
+html,
+body,
+p {
+  color: $main-text-color;
+}
+
+.FASHION {
+  color: #a72da3;
+}
+
+.condo {
+  color: #d68000;
+}
+
+.house {
+  color: #bf1818;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.btn-bwm {
+  background-color: $main-color;
+  border-color: $main-color;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $main-color !important;
+    background-color: $main-color !important;
+  }
+}
+
+.bwm-form {
+  color: $main-text-color;
+
+  .custom-submit-button {
+    margin-top: 20px;
+  }
+
+  form {
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    p {
+      margin: 0;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .form-text {
+    font-size: 13px;
+  }
+
+  .catchphrase {
+    text-align: center;
+    font-size: 42px;
+    position: absolute;
+    color: #f1f1f1;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+}
+
+.inline {
+  display: inline-block;
+}
+
+.editable-component {
+  .btn {
+    &.btn-editable {
+      margin-left: 5px;
+      color: white;
+      font-size: 12px;
+    }
+  }
+}

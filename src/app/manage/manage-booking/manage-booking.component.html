@@ -1,0 +1,98 @@
+<section id="userBookings">
+    <h1 class="page-title">{{ 'MANAGE_BOOKING.MY_BOOKINGS' | translate }}</h1>
+    <div class="row">
+        <ng-container *ngIf="bookings && bookings.length > 0">
+            <div class="col-md-4" *ngFor="let booking of bookings; let i=index">
+                <div class="card text-center">
+                    <div class="card-header">
+                        {{ booking?.tmer?.category || ('MANAGE_BOOKING.DELETED_TMER' | translate) }}
+                    </div>
+                    <div class="card-block">
+                        <ng-container *ngIf="booking?.tmer">
+                            <h4 class="card-title">
+                                {{ booking?.tmer?.title }} - {{ booking?.tmer?.city | ucwords }}
+                            </h4>
+                            <p class="card-text booking-desc">{{ booking?.tmer?.description }}</p>
+                        </ng-container>
+                        <p class="card-text booking-days">
+                            {{ booking?.startAt | formatDate: 'Y/MM/DD h:mm A' }} to
+                            {{ booking?.endAt | formatDate: 'h:mm A' }} | {{ booking?.hours }} hours
+                        </p>
+                        <p class="card-text">
+                            <span>{{ 'MANAGE_BOOKING.PRICE' | translate }}: </span>
+                            <span class="booking-price-value">{{ booking?.totalPrice }} $</span>
+                        </p>
+                        <a *ngIf="booking?.tmer" class="btn btn-bwm" routerLink="/tmers/{{ booking?.tmer?._id }}">
+                            {{ 'MANAGE_BOOKING.GO_TO_TMER' | translate }}
+                        </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Created {{ booking?.createdAt | formatDate: 'Y/MM/DD h:mm A' }}
+
+                        <!--New windows for review-->
+                    <!-- In your parent component template -->
+                    <app-review *ngIf="!booking.review && isExpired(booking.endAt)" 
+                                [bookingId]="booking._id" 
+                                (reviewSubmitted)="reviewPublished(i,$event)">
+                    </app-review>
+
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <div *ngIf="bookings && bookings.length === 0" class="alert alert-warning">
+            {{ 'MANAGE_BOOKING.NO_BOOKINGS' | translate }}
+            <a class="btn btn-bwm" routerLink="/tmers">{{ 'MANAGE_BOOKING.AVAILABLE_TMERS' | translate }}</a>
+        </div>
+    </div>
+
+    <h1 class="page-title">{{ 'MANAGE_BOOKING.PENDING_BOOKINGS' | translate }}</h1>
+    <div class="row">
+        <ng-container *ngIf="payments && payments.length > 0">
+            <div class="col-md-4" *ngFor="let payment of payments">
+                <div class="card text-center">
+                    <div class="card-header">
+                        {{ 'MANAGE_BOOKING.BOOKING_MADE_BY' | translate }} {{ payment?.fromUser?.username ||
+                        ('MANAGE_BOOKING.UNKNOWN_USER' | translate) }}
+                    </div>
+                    <div class="card-block">
+                        <ng-container *ngIf="payment?.booking?.tmer">
+                            <h4 class="card-title">
+                                {{ payment?.booking?.tmer?.title }} - {{ payment?.booking?.tmer?.city | ucwords }}
+                            </h4>
+                            <p class="card-text booking-desc">{{ payment?.booking?.tmer?.description }}</p>
+                        </ng-container>
+                        <p class="card-text booking-days">
+                            {{ payment?.booking?.startAt | formatDate: 'Y/MM/DD h:mm A' }} to
+                            {{ payment?.booking?.endAt | formatDate: 'h:mm A' }} | {{ payment?.booking?.hours }} hours
+                        </p>
+                        <p class="card-text">
+                            <span>{{ 'MANAGE_BOOKING.REVENUE' | translate }}: </span>
+                            <span class="booking-price-value">{{ payment.amount / 100 }} $</span>
+                        </p>
+                        <p class="card-text">
+                            <span>{{ 'MANAGE_BOOKING.STATUS' | translate }}: </span>
+                            <span class="booking-price-value">{{ payment.status }} </span>
+                        </p>
+                        <div *ngIf="payment.status === 'pending'">
+                            <button class='btn btn-success' (click)="acceptPayment(payment)"
+                                [disabled]="loading[payment._id]" [ngClass]="{'loading-opacity': loading[payment._id]}">
+                                {{ 'MANAGE_BOOKING.CONFIRM' | translate }}
+                            </button>
+                            <button class='btn btn-danger ml-2' (click)="declinePayment(payment)"
+                                [disabled]="loading[payment._id]" [ngClass]="{'loading-opacity': loading[payment._id]}">
+                                {{ 'MANAGE_BOOKING.DECLINE' | translate }}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Created {{ payment?.booking?.createdAt | formatDate: 'Y/MM/DD h:mm A' }}
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <div *ngIf="payments && payments.length === 0" class="alert alert-warning">
+            {{ 'MANAGE_BOOKING.NO_PENDING' | translate }}
+        </div>
+    </div>
+</section>

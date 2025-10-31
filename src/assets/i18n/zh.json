@@ -1,0 +1,160 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "用户资料",
+    "USERNAME": "用户名",
+    "EMAIL": "电子邮件",
+    "SAVE": "保存",
+    "RESET": "重置"
+  },
+  "SETTINGS": {
+    "TITLE": "设置",
+    "DARK_MODE": "深色模式",
+    "LANGUAGE": "语言",
+    "TIMEZONE": "时区",
+    "SAVE": "保存首选项"
+  },
+  "PASSWORD": {
+  "CURRENT": "当前密码",
+  "NEW": "新密码",
+  "CONFIRM": "确认新密码",
+  "UPDATE": "更改密码",
+  "UPDATE_TITLE": "更新您的密码"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "首选项已保存！",
+    "PREFERENCES_FAILED": "保存首选项时出错。",
+    "PASSWORD_UPDATED": "密码更新成功！",
+    "PASSWORD_UPDATE_ERROR": "更新密码时出错"
+  },
+  "HEADER": {
+    "LOGIN": "登录",
+    "REGISTER": "注册",
+    "CONTACT": "联系方式",
+    "OWNER_SECTION": "所有者部分",
+    "PROFILE": "资料",
+    "CREATE_TMER": "创建Tmer",
+    "MANAGE_TMERS": "管理Tmers",
+    "MANAGE_BOOKINGS": "管理预订",
+    "LOGOUT": "登出"
+  },
+  "TMER_LIST": {
+    "TITLE": "您与世界保持联系"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "类别",
+    "AVAILABLE": "可用",
+    "NOT_AVAILABLE": "不可用",
+    "USERNAME": "用户名",
+    "TITLE": "标题",
+    "CITY": "城市",
+    "DESCRIPTION": "描述",
+    "ASSETS": "品质",
+    "SPONTANEOUS": "自发的",
+    "COOL": "冷静的",
+    "EASY_PERSON": "随和的人",
+    "KEEN": "热心的",
+    "FRIENDLY": "友好的",
+    "SPORTIVE": "运动的",
+    "LANGUAGES": "语言",
+    "PHOTOS": "照片"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "每小时",
+    "DATES": "日期",
+    "GUESTS": "客人",
+    "RESERVE_BUTTON": "立即预订",
+    "LOGIN_PROMPT": "登录以预订此人",
+    "NOTE_TITLE": "预订说明",
+    "NOTE_TEXT": "付款后，主人将确认您的预订。",
+    "CONFIRM_TITLE": "确认预订",
+    "HOURS": "小时",
+    "PER_HOUR_PRICE": "每小时",
+    "TOTAL_GUESTS": "客人",
+    "PRICE": "价格",
+    "CONFIRM": "确认",
+    "CLOSE": "关闭"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "类别",
+    "PRICE_PER_SESSION": "每次会话价格",
+    "FREE_CANCELLATION": "免费取消"
+  },
+  "LOGIN": {
+    "TITLE": "登录",
+    "EMAIL": "电子邮件",
+    "PASSWORD": "密码",
+    "SUBMIT": "提交",
+    "INVALID_EMAIL": "需要电子邮件。",
+    "INVALID_PASSWORD": "需要密码。",
+    "EMAIL_PATTERN": "电子邮件必须有效。",
+    "CATCHPHRASE": "作为我们的会员，您可以接触到世界上最了不起的人。",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "凭据无效。请重试。"
+    }
+  },
+  "REGISTER": {
+    "TITLE": "注册",
+    "USERNAME": "用户名",
+    "EMAIL": "电子邮件",
+    "PASSWORD": "密码",
+    "CONFIRM_PASSWORD": "确认密码",
+    "SUBMIT": "提交",
+    "USERNAME_REQUIRED": "需要用户名。",
+    "EMAIL_REQUIRED": "需要电子邮件。",
+    "PASSWORD_REQUIRED": "需要密码。",
+    "PASSWORD_CONFIRMATION_REQUIRED": "需要确认密码。",
+    "PASSWORD_MISMATCH": "密码不匹配。",
+    "SUCCESS_MESSAGE": "注册成功！您现在可以登录。",
+    "CATCHPHRASE": "作为我们的会员，您可以接触到世界上最了不起的人。"
+  },
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "我的预订",
+    "PENDING_BOOKINGS": "我的待处理预订",
+    "DELETED_TMER": "已删除的Tmer",
+    "PRICE": "价格",
+    "REVENUE": "收入",
+    "STATUS": "状态",
+    "CONFIRM": "确认",
+    "DECLINE": "拒绝",
+    "NO_BOOKINGS": "您没有创建任何预订。转到tmers部分，立即预订一个人进行交谈。",
+    "NO_PENDING": "您没有待处理的预订！",
+    "AVAILABLE_TMERS": "可用的Tmers",
+    "BOOKING_MADE_BY": "预订由",
+    "UNKNOWN_USER": "未知用户",
+    "GO_TO_TMER": "转到Tmer"
+  },
+  "TMER_CREATE": {
+    "TITLE": "创建TellMe",
+    "FORM": {
+      "TITLE": "标题",
+      "CITY": "城市",
+      "STREET": "街道",
+      "CATEGORY": "类别",
+      "AGE": "年龄",
+      "DESCRIPTION": "描述",
+      "DAILY_RATE": "每日价格",
+      "SHARED": "共享",
+      "SUBMIT": "提交"
+    },
+    "CATCHPHRASE": "点击几下即可联系数百位优秀人才。",
+    "ERRORS": {
+      "UNKNOWN": "发生未知错误。"
+    }
+  },
+   "MANAGE_TMER": {
+    "TITLE": "我的Tmers",
+    "GO_TO_TMER": "转到Tmer",
+    "CREATED_AT": "创建于",
+    "DELETE": "删除",
+    "EDIT": "编辑",
+    "CONFIRM_MESSAGE": "确认删除吗？",
+    "CONFIRM_YES": "是",
+    "CONFIRM_NO": "否",
+    "NO_TMERS": "您目前没有创建任何Tmer。如果您想宣传您的报价，请点击此链接。",
+    "REGISTER_TMER": "注册Tmer",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmer删除成功！",
+      "ERROR_DELETE": "无法删除有活跃预订的Tmer！"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "User Profile",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "SAVE": "Save",
+    "RESET": "Reset"
+  },
+  "SETTINGS": {
+    "TITLE": "Settings",
+    "DARK_MODE": "Dark mode",
+    "LANGUAGE": "Language",
+    "TIMEZONE": "Timezone",
+    "SAVE": "Save preferences"
+  },
+  "PASSWORD": {
+  "CURRENT": "Current password",
+  "NEW": "New password",
+  "CONFIRM": "Confirm new password",
+  "UPDATE": "Change password",
+  "UPDATE_TITLE": "Update your password"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "Preferences saved!",
+    "PREFERENCES_FAILED": "Error saving preferences.",
+    "PASSWORD_UPDATED": "Password updated successfully!",
+    "PASSWORD_UPDATE_ERROR": "Error updating password"
+  },
+  "HEADER": {
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "CONTACT": "Contact",
+    "OWNER_SECTION": "Owner section",
+    "PROFILE": "Profile",
+    "CREATE_TMER": "Create Tmer",
+    "MANAGE_TMERS": "Manage Tmers",
+    "MANAGE_BOOKINGS": "Manage bookings",
+    "LOGOUT": "Logout"
+  },
+  "TMER_LIST": {
+    "TITLE": "You're in contact, worldwide"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "Category",
+    "AVAILABLE": "Available",
+    "NOT_AVAILABLE": "Not available",
+    "USERNAME": "Username",
+    "TITLE": "Title",
+    "CITY": "City",
+    "DESCRIPTION": "Description",
+    "ASSETS": "Qualities",
+    "SPONTANEOUS": "Spontaneous",
+    "COOL": "Cool",
+    "EASY_PERSON": "Easy person",
+    "KEEN": "Keen",
+    "FRIENDLY": "Friendly",
+    "SPORTIVE": "Sporty",
+    "LANGUAGES": "Languages",
+    "PHOTOS": "Add photos/Videos"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "per hour",
+    "DATES": "Dates",
+    "GUESTS": "Guests",
+    "RESERVE_BUTTON": "Book now",
+    "LOGIN_PROMPT": "Login to book this person today",
+    "NOTE_TITLE": "Booking note",
+    "NOTE_TEXT": "The host will confirm your booking once payment is made.",
+    "CONFIRM_TITLE": "Confirm booking",
+    "HOURS": "hours",
+    "PER_HOUR_PRICE": "per hour",
+    "TOTAL_GUESTS": "Guests",
+    "PRICE": "Price",
+    "CONFIRM": "Confirm",
+    "CLOSE": "Close"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "Category",
+    "PRICE_PER_SESSION": "Price per session",
+    "FREE_CANCELLATION": "Free cancellation"
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "SUBMIT": "Submit",
+    "INVALID_EMAIL": "Email is required.",
+    "INVALID_PASSWORD": "Password is required.",
+    "EMAIL_PATTERN": "Email must be valid.",
+    "CATCHPHRASE": "As our member, you have access to the most amazing people in the world.",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "Invalid credentials. Please try again."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Register",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm password",
+    "SUBMIT": "Submit",
+    "USERNAME_REQUIRED": "Username is required.",
+    "EMAIL_REQUIRED": "Email is required.",
+    "PASSWORD_REQUIRED": "Password is required.",
+    "PASSWORD_CONFIRMATION_REQUIRED": "Password confirmation is required.",
+    "PASSWORD_MISMATCH": "Passwords don't match.",
+    "SUCCESS_MESSAGE": "Successfully registered! You can now login.",
+    "CATCHPHRASE": "As our member, you have access to the most amazing people in the world."
+  },
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "My Bookings",
+    "PENDING_BOOKINGS": "My Pending Bookings",
+    "DELETED_TMER": "Deleted Tmer",
+    "PRICE": "Price",
+    "REVENUE": "Revenue",
+    "STATUS": "Status",
+    "CONFIRM": "Confirm",
+    "DECLINE": "Decline",
+    "NO_BOOKINGS": "You have no bookings created. Go to tmers section and book a person today to speak with.",
+    "NO_PENDING": "You have no pending bookings!",
+    "AVAILABLE_TMERS": "Available Tmers",
+    "BOOKING_MADE_BY": "Booking made by",
+    "UNKNOWN_USER": "Unknown User",
+    "GO_TO_TMER": "Go to Tmer"
+  },
+  "TMER_CREATE": {
+    "TITLE": "Create a TellMe",
+    "FORM": {
+      "TITLE": "Title",
+      "CITY": "City",
+      "STREET": "Street",
+      "CATEGORY": "Category",
+      "AGE": "Age",
+      "DESCRIPTION": "Description",
+      "DAILY_RATE": "Daily Rate",
+      "SHARED": "Shared",
+      "SUBMIT": "Submit"
+    },
+    "CATCHPHRASE": "Hundreds of awesome people in reach of few clicks.",
+    "ERRORS": {
+      "UNKNOWN": "An unknown error occurred."
+    }
+  },
+  "MANAGE_TMER": {
+    "TITLE": "My Tmers",
+    "GO_TO_TMER": "Go to Tmer",
+    "CREATED_AT": "Created at",
+    "DELETE": "Delete",
+    "EDIT": "Edit",
+    "CONFIRM_MESSAGE": "Do you confirm delete?",
+    "CONFIRM_YES": "Yes",
+    "CONFIRM_NO": "No",
+    "NO_TMERS": "You don't have any Tmer currently created. If you want to advertise your offer please follow this link.",
+    "REGISTER_TMER": "Register Tmer",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmer deleted successfully!",
+      "ERROR_DELETE": "Cannot delete Tmer with active bookings!"
+    }
+  }
+}

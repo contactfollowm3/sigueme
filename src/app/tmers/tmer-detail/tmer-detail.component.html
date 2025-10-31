@@ -1,0 +1,118 @@
+<section id="tmerDetails" *ngIf="tmer">
+  <div class="upper-section">
+    <div class="row">
+      <div class="col-md-8">
+        <img [src]="tmer.image" alt="Tmer image" />
+      </div>
+      <div class="col-md-4">
+        <bwm-map [location]="tmer.city + ', ' + tmer.street"></bwm-map>
+      </div>
+    </div>
+  </div>
+
+  <div class="details-section">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="tabs">
+          <button class="link-button" [routerLink]="['/tmers', tmer._id, 'photo-upload']">
+            {{ 'TMER_DETAIL.PHOTOS' | translate }}
+          </button>
+        </div>
+
+        <div class="tmer">
+          {{ 'TMER_DETAIL.CATEGORY' | translate }}:
+          <h2 class="tmer-type {{ tmer.category }}">
+            {{ tmer.shared ? ('TMER_DETAIL.AVAILABLE' | translate) : ('TMER_DETAIL.NOT_AVAILABLE' | translate) }}
+            {{ tmer.category }}
+          </h2>
+
+          <div class="tmer-owner">
+            <img [src]="tmer.image" alt="Owner image" />
+            {{ 'TMER_DETAIL.USERNAME' | translate }}:
+            <span>{{ tmer.user.username }}</span>
+          </div>
+
+          <hr />
+
+          {{ 'TMER_DETAIL.TITLE' | translate }}:
+          <h1 class="tmer-title">{{ tmer.title }}</h1>
+
+          <hr />
+
+          {{ 'TMER_DETAIL.CITY' | translate }}:
+          <h2 class="tmer-city">{{ tmer.city | uppercase }}</h2>
+
+          <div class="tmer-room-info">
+            <span><i class="fa fa-globe"></i>{{ tmer.bedrooms }} {{ 'TMER_DETAIL.LANGUAGES' | translate }}</span>
+          </div>
+
+          {{ 'TMER_DETAIL.DESCRIPTION' | translate }}:
+          <p class="tmer-description">{{ tmer.description }}</p>
+
+          <div *ngIf="rating !== undefined" class="tmer-rating">
+            <span>reviews : {{ reviewCount }} rating : {{ rating | number:'1.1-1' }}</span>
+          </div>
+
+          <hr />
+
+          <div class="tmer-assets">
+            <h3 class="title">{{ 'TMER_DETAIL.ASSETS' | translate }}</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <span><i class="fa fa-asterisk"></i> {{ 'TMER_DETAIL.SPONTANEOUS' | translate }}</span>
+                <span><i class="fa fa-thermometer"></i> {{ 'TMER_DETAIL.COOL' | translate }}</span>
+                <span><i class="fa-regular fa-glasses"></i> {{ 'TMER_DETAIL.EASY_PERSON' | translate }}</span>
+              </div>
+              <div class="col-md-6">
+                <span><i class="fa fa-cube"></i> {{ 'TMER_DETAIL.KEEN' | translate }}</span>
+                <span><i class="fa fa-cube"></i> {{ 'TMER_DETAIL.FRIENDLY' | translate }}</span>
+                <span><i class="fa fa-cube"></i> {{ 'TMER_DETAIL.SPORTIVE' | translate }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <bwm-tmer-detail-booking [tmer]="tmer"></bwm-tmer-detail-booking>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-8" *ngIf="tmer && tmer._id">
+        <app-photo-upload [tmerId]="tmer._id"></app-photo-upload>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <section>
+          <h2>Reviews</h2>
+          <div *ngFor="let review of reviews" class="card review-card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"
+                    alt="User face" />
+                  <p class="text-secondary text-center">{{ formatDate(review.createdAt) }}</p>
+                </div>
+                <div class="col-md-10">
+                  <div>
+                    <a><strong>{{ review.user?.username }}</strong></a>
+                    <div class="review-section">
+                      <star-rating [starType]="'svg'" [numOfStars]="5" [showHalfStars]="true" [disabled]="true"
+                        [rating]="review.rating">
+                      </star-rating>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <p>{{ review.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>

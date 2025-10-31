@@ -1,0 +1,91 @@
+@import 'src/styles/_variables';
+
+/*
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+
+.bwm-card {
+  border: none;
+
+  .card-block {
+    padding-top: 8px;
+
+    .card-subtitle {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #16861a;
+      text-decoration: none; // Add this line to remove underline
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin: 3px 0;
+      color: $main-text-color;
+      text-decoration: none; // Add this line to remove underline
+    }
+
+    .card-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: #7e7e7e;
+      margin-bottom: 0;
+      text-decoration: none; // Add this line to remove underline
+    }
+  }
+}
+*/
+
+
+
+a {
+  text-decoration: none; // Add this line to remove underline for all links
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+/* SINGLE CARD STYLES */
+.bwm-card {
+  border: none;
+  margin-bottom: 25px;
+
+  .card-block {
+    padding-top: 8px;
+
+    .card-subtitle,
+    .card-title,
+    .card-text {
+      margin: 0;
+      text-decoration: none !important; // Add this line to remove underline for the text elements
+    }
+
+    .card-subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #16861a;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin: 3px 0;
+      color: $main-text-color;
+    }
+
+    .card-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: #7e7e7e;
+      margin-bottom: 0;
+    }
+  }
+}

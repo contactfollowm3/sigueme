@@ -1,0 +1,39 @@
+<section class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us!</p>
+
+    <div class="contact-info">
+    
+      <div class="contact-info-item">
+        <h4>Phone</h4>
+        <p>(514) 622-0308</p>
+      </div>
+      <div class="contact-info-item">
+        <h4>Email</h4>
+        <p>contact&#64;t3llme.com</p>
+
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="input-box">
+          <input type="text" name="name" ngModel required>
+          <label>Full Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" ngModel required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <textarea name="message" ngModel required></textarea>
+          <label>Message</label>
+        </div>
+        <div class="input-box">
+          <input type="submit" value="Send" [disabled]="!contactForm.valid">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

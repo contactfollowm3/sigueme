@@ -1,0 +1,61 @@
+<section id="register">
+  <div class="bwm-form">
+    <div class="row">
+      <div class="col-md-5">
+        <h1 class="page-title">{{ 'REGISTER.TITLE' | translate }}</h1>
+        <form #registerForm="ngForm">
+          <div class="form-group">
+            <label for="username">{{ 'REGISTER.USERNAME' | translate }}</label>
+            <input [(ngModel)]="formData.username" #username="ngModel" name="username" type="text" class="form-control"
+              id="username" required>
+            <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert">
+              <div *ngIf="username.errors?.['required']">
+                {{ 'REGISTER.USERNAME_REQUIRED' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">{{ 'REGISTER.EMAIL' | translate }}</label>
+            <input [(ngModel)]="formData.email" #email="ngModel" name="email" type="email" class="form-control"
+              id="email" required>
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+              <div *ngIf="email.errors?.['required']">
+                {{ 'REGISTER.EMAIL_REQUIRED' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">{{ 'REGISTER.PASSWORD' | translate }}</label>
+            <input [(ngModel)]="formData.password" name="password" type="password" class="form-control" id="password"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="passwordConfirmation">{{ 'REGISTER.PASSWORD_CONFIRMATION' | translate }}</label>
+            <input [(ngModel)]="formData.passwordConfirmation" name="passwordConfirmation" type="password"
+              class="form-control" id="passwordConfirmation" required>
+          </div>
+
+          <button [disabled]="!registerForm.form.valid" (click)="register()" type="submit" class="btn btn-bwm">
+            {{ 'REGISTER.SUBMIT' | translate }}
+          </button>
+        </form>
+
+        <div *ngIf="errors.length > 0" class="alert alert-danger">
+          <p *ngFor="let error of errors">
+            {{ error }}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 ml-auto">
+        <div class="image-container">
+          <h4 class="catchphrase">{{ 'REGISTER.CATCHPHRASE' | translate }}</h4>
+          <img src="assets/images/LosRoques.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

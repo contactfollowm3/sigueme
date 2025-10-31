@@ -1,0 +1,40 @@
+<section id="userRentals">
+    <h1 class="page-title">{{ 'MANAGE_TMER.TITLE' | translate }}</h1>
+    <div class="row">
+        <ng-container *ngIf="tmers && tmers.length > 0">
+            <div *ngFor="let tmer of tmers; let i=index" class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title">{{tmer.title}} - {{tmer.city | ucwords}}</h4>
+                        <a class="btn btn-bwm btn-ghost" routerLink="/tmers/{{tmer._id}}">{{ 'MANAGE_TMER.GO_TO_TMER' |
+                            translate }}</a>
+                        <span *ngIf="tmer.bookings && tmer.bookings.length > 0">
+                            <app-manage-tmer-booking [bookings]="tmer.bookings"></app-manage-tmer-booking>
+                        </span>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p>{{ 'MANAGE_TMER.CREATED_AT' | translate }} {{tmer.createdAt | formatDate}}</p>
+
+                        <button (click)="showConfirmation(i)" *ngIf="!tmerDeleteIndex" type="button"
+                            class="btn btn-bwm btn-delete">{{ 'MANAGE_TMER.DELETE' | translate }}</button>
+                        <a class="btn btn-warning btn-edit" routerLink="/tmers/{{tmer._id}}/edit">{{ 'MANAGE_TMER.EDIT'
+                            | translate }}</a>
+                        <div *ngIf="tmerDeleteIndex === i">
+                            <p class="confirm-message">{{ 'MANAGE_TMER.CONFIRM_MESSAGE' | translate }}</p>
+                            <button (click)="tmer._id && deleteTmer(tmer._id)" class="btn btn-success">{{
+                                'MANAGE_TMER.CONFIRM_YES' | translate }}</button>
+                            <button (click)="cancelDelete()" class="btn btn-danger">{{ 'MANAGE_TMER.CONFIRM_NO' |
+                                translate }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <div *ngIf="tmers && tmers.length === 0" class="col-md-8">
+            <div class="alert alert-warning">
+                {{ 'MANAGE_TMER.NO_TMERS' | translate }}
+                <a class="btn btn-bwm" routerLink="/tmers/new">{{ 'MANAGE_TMER.REGISTER_TMER' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</section>

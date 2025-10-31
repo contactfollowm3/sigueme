@@ -1,0 +1,92 @@
+<div class="backG">
+  <section id="newRental">
+    <div class="bwm-form">
+      <div class="row">
+        <div class="col-md-5">
+          <h1 class="page-title">{{ 'TMER_CREATE.TITLE' | translate }}</h1>
+          <form #tmerForm="ngForm">
+            <div class="form-group">
+              <label for="title">{{ 'TMER_CREATE.FORM.TITLE' | translate }}</label>
+              <input type="text" class="form-control" id="title" name="title" [(ngModel)]="newTmer.title" required />
+            </div>
+
+            <div class="form-group">
+              <label for="city">{{ 'TMER_CREATE.FORM.CITY' | translate }}</label>
+              <input type="text" class="form-control" id="city" name="city" [(ngModel)]="newTmer.city" required />
+            </div>
+
+            <div class="form-group">
+              <label for="street">{{ 'TMER_CREATE.FORM.STREET' | translate }}</label>
+              <input type="text" class="form-control" id="street" name="street" [(ngModel)]="newTmer.street" required />
+            </div>
+
+            <div class="form-group">
+              <label for="category">{{ 'TMER_CREATE.FORM.CATEGORY' | translate }}</label>
+              <select class="form-control" id="category" name="category" [(ngModel)]="newTmer.category" required>
+                <option *ngFor="let category of tmerCategories" [value]="category">
+                  {{ category }}
+                </option>
+              </select>
+            </div>
+
+            <!-- Image Upload Component -->
+            <div class="form-group">
+              <app-image-upload (imageUploaded)="handleImageUpload($event)"
+                (imageError)="handleImageError()"></app-image-upload>
+
+              <!-- Optional image preview -->
+              <img *ngIf="newTmer.image" [src]="newTmer.image" class="img-thumbnail mt-2" style="max-width: 100%" />
+            </div>
+
+            <div class="form-group">
+              <label for="age">{{ 'TMER_CREATE.FORM.AGE' | translate }}</label>
+              <input type="number" class="form-control" id="age" name="age" [(ngModel)]="newTmer.age" required />
+            </div>
+
+            <div class="form-group">
+              <label for="description">{{ 'TMER_CREATE.FORM.DESCRIPTION' | translate }}</label>
+              <textarea rows="5" class="form-control" id="description" name="description"
+                [(ngModel)]="newTmer.description"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="dailyRate">{{ 'TMER_CREATE.FORM.DAILY_RATE' | translate }}</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="number" id="dailyRate" name="dailyRate" class="form-control"
+                  [(ngModel)]="newTmer.dailyRate" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="shared">{{ 'TMER_CREATE.FORM.SHARED' | translate }}</label>
+              <br />
+              <input type="checkbox" id="shared" name="shared" [(ngModel)]="newTmer.shared" />
+            </div>
+
+            <button (click)="createTmer()" [disabled]="
+                !tmerForm.form.valid || !newTmer.image || isSubmitting
+              " type="button" class="btn btn-bwm">
+              {{ 'TMER_CREATE.FORM.SUBMIT' | translate }}
+            </button>
+          </form>
+
+          <div *ngIf="errors.length > 0" class="alert alert-danger">
+            <p *ngFor="let error of errors">{{ error }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 ml-auto">
+          <div class="image-container">
+            <img src="assets/images/create-rental.jpg" alt="" />
+            <div class="image-text">
+              <h2 class="catchphrase">{{ 'TMER_CREATE.CATCHPHRASE' | translate }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

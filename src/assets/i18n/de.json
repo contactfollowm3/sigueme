@@ -1,0 +1,142 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "Benutzerprofil",
+    "USERNAME": "Benutzername",
+    "EMAIL": "E-Mail",
+    "SAVE": "Speichern",
+    "RESET": "Zurücksetzen"
+  },
+  "SETTINGS": {
+    "TITLE": "Einstellungen",
+    "DARK_MODE": "Dunkler Modus",
+    "LANGUAGE": "Sprache",
+    "TIMEZONE": "Zeitzone",
+    "SAVE": "Einstellungen speichern"
+  },
+ "PASSWORD": {
+  "CURRENT": "Aktuelles Passwort",
+  "NEW": "Neues Passwort",
+  "CONFIRM": "Neues Passwort bestätigen",
+  "UPDATE": "Passwort ändern",
+  "UPDATE_TITLE": "Ihr Passwort aktualisieren"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "Einstellungen gespeichert!",
+    "PREFERENCES_FAILED": "Fehler beim Speichern der Einstellungen.",
+    "PASSWORD_UPDATED": "Passwort erfolgreich aktualisiert!",
+    "PASSWORD_UPDATE_ERROR": "Fehler beim Aktualisieren des Passworts"
+  },
+  "HEADER": {
+    "LOGIN": "Anmelden",
+    "REGISTER": "Registrieren",
+    "CONTACT": "Kontakt",
+    "OWNER_SECTION": "Eigentümerbereich",
+    "PROFILE": "Profil",
+    "CREATE_TMER": "Tmer erstellen",
+    "MANAGE_TMERS": "Tmers verwalten",
+    "MANAGE_BOOKINGS": "Buchungen verwalten",
+    "LOGOUT": "Abmelden"
+  },
+  "TMER_LIST": {
+    "TITLE": "Sie sind weltweit in Kontakt"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "Kategorie",
+    "AVAILABLE": "Verfügbar",
+    "NOT_AVAILABLE": "Nicht verfügbar",
+    "USERNAME": "Benutzername",
+    "TITLE": "Titel",
+    "CITY": "Stadt",
+    "DESCRIPTION": "Beschreibung",
+    "ASSETS": "Eigenschaften",
+    "SPONTANEOUS": "Spontan",
+    "COOL": "Cool",
+    "EASY_PERSON": "Einfache Person",
+    "KEEN": "Begeistert",
+    "FRIENDLY": "Freundlich",
+    "SPORTIVE": "Sportlich",
+    "LANGUAGES": "Sprachen",
+    "PHOTOS": "Fotos"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "pro Stunde",
+    "DATES": "Daten",
+    "GUESTS": "Gäste",
+    "RESERVE_BUTTON": "Jetzt buchen",
+    "LOGIN_PROMPT": "Melden Sie sich an, um diese Person heute zu buchen",
+    "NOTE_TITLE": "Buchungshinweis",
+    "NOTE_TEXT": "Der Gastgeber bestätigt Ihre Buchung, sobald die Zahlung erfolgt ist.",
+    "CONFIRM_TITLE": "Buchung bestätigen",
+    "HOURS": "Stunden",
+    "PER_HOUR_PRICE": "pro Stunde",
+    "TOTAL_GUESTS": "Gäste",
+    "PRICE": "Preis",
+    "CONFIRM": "Bestätigen",
+    "CLOSE": "Schließen"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "Kategorie",
+    "PRICE_PER_SESSION": "Preis pro Sitzung",
+    "FREE_CANCELLATION": "Kostenlose Stornierung"
+  },
+  "LOGIN": {
+    "TITLE": "Anmelden",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "SUBMIT": "Einreichen",
+    "INVALID_EMAIL": "E-Mail ist erforderlich.",
+    "INVALID_PASSWORD": "Passwort ist erforderlich.",
+    "EMAIL_PATTERN": "E-Mail muss gültig sein.",
+    "CATCHPHRASE": "Als unser Mitglied haben Sie Zugang zu den erstaunlichsten Menschen der Welt.",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "Ungültige Anmeldeinformationen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Registrieren",
+    "USERNAME": "Benutzername",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "CONFIRM_PASSWORD": "Passwort bestätigen",
+    "SUBMIT": "Einreichen",
+    "USERNAME_REQUIRED": "Benutzername ist erforderlich.",
+    "EMAIL_REQUIRED": "E-Mail ist erforderlich.",
+    "PASSWORD_REQUIRED": "Passwort ist erforderlich.",
+    "PASSWORD_CONFIRMATION_REQUIRED": "Passwortbestätigung ist erforderlich.",
+    "PASSWORD_MISMATCH": "Passwörter stimmen nicht überein.",
+    "SUCCESS_MESSAGE": "Erfolgreich registriert! Sie können sich jetzt anmelden.",
+    "CATCHPHRASE": "Als unser Mitglied haben Sie Zugang zu den erstaunlichsten Menschen der Welt."
+  },
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "Meine Buchungen",
+    "PENDING_BOOKINGS": "Meine ausstehenden Buchungen",
+    "DELETED_TMER": "Gelöschter Tmer",
+    "PRICE": "Preis",
+    "REVENUE": "Einnahmen",
+    "STATUS": "Status",
+    "CONFIRM": "Bestätigen",
+    "DECLINE": "Ablehnen",
+    "NO_BOOKINGS": "Sie haben keine Buchungen. Gehen Sie zum Tmers-Bereich und buchen Sie noch heute eine Person zum Sprechen.",
+    "NO_PENDING": "Sie haben keine ausstehenden Buchungen!",
+    "AVAILABLE_TMERS": "Verfügbare Tmers",
+    "BOOKING_MADE_BY": "Buchung gemacht von",
+    "UNKNOWN_USER": "Unbekannter Benutzer",
+    "GO_TO_TMER": "Zu Tmer gehen"
+  },
+  "MANAGE_TMER": {
+    "TITLE": "Meine Tmers",
+    "GO_TO_TMER": "Zu Tmer gehen",
+    "CREATED_AT": "Erstellt am",
+    "DELETE": "Löschen",
+    "EDIT": "Bearbeiten",
+    "CONFIRM_MESSAGE": "Löschung bestätigen?",
+    "CONFIRM_YES": "Ja",
+    "CONFIRM_NO": "Nein",
+    "NO_TMERS": "Sie haben derzeit keine Tmer erstellt. Wenn Sie Ihr Angebot bewerben möchten, folgen Sie diesem Link.",
+    "REGISTER_TMER": "Tmer registrieren",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmer erfolgreich gelöscht!",
+      "ERROR_DELETE": "Tmer mit aktiven Buchungen kann nicht gelöscht werden!"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.btn-ghost {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    padding: 10px 15px;
+    /* Add padding to match the other button styles */
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+    background-color: #007bff;
+    color: white;
+}

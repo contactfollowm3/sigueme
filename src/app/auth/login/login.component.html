@@ -1,0 +1,46 @@
+<div class="backG">
+  <section id="login">
+    <div class="bwm-form">
+      <div class="row">
+        <div class="col-md-5">
+          <h1 class="page-title">{{ 'LOGIN.TITLE' | translate }}</h1>
+          <div *ngIf="notifyMessage" class="alert text-dark">
+            {{notifyMessage}}
+          </div>
+
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="form-group">
+              <label for="email">{{ 'LOGIN.EMAIL' | translate }}</label>
+              <input type="email" class="form-control" id="email" formControlName="email">
+              <div *ngIf="isInvalidForm('email')" class="alert">
+                <div *ngIf="isRequired('email')">
+                  {{ 'LOGIN.INVALID_EMAIL' | translate }}
+                </div>
+                <div *ngIf="loginForm.controls['email'].errors?.['pattern']">
+                  {{ 'LOGIN.EMAIL_PATTERN' | translate }}
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">{{ 'LOGIN.PASSWORD' | translate }}</label>
+              <input type="password" class="form-control" id="password" formControlName="password">
+            </div>
+            <button [disabled]="!loginForm.valid" type="submit" class="btn btn-bwm">
+              {{ 'LOGIN.SUBMIT' | translate }}
+            </button>
+          </form>
+          <div *ngIf="errors.length > 0" class="alert alert-danger">
+            <p *ngFor="let error of errors">
+              {{error}}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 ml-auto">
+          <div class="image-container">
+            <h2 class="catchphrase">{{ 'LOGIN.CATCHPHRASE' | translate }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

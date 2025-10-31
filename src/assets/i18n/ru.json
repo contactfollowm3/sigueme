@@ -1,0 +1,162 @@
+{
+  "USER_PROFILE": {
+    "TITLE": "Профиль пользователя",
+    "USERNAME": "Имя пользователя",
+    "EMAIL": "Электронная почта",
+    "SAVE": "Сохранить",
+    "RESET": "Сбросить"
+  },
+  "SETTINGS": {
+    "TITLE": "Настройки",
+    "DARK_MODE": "Темный режим",
+    "LANGUAGE": "Язык",
+    "TIMEZONE": "Часовой пояс",
+    "SAVE": "Сохранить настройки"
+  },
+  "PASSWORD": {
+  "CURRENT": "Текущий пароль",
+  "NEW": "Новый пароль",
+  "CONFIRM": "Подтвердите новый пароль",
+  "UPDATE": "Изменить пароль",
+  "UPDATE_TITLE": "Обновите ваш пароль"
+},
+  "MESSAGES": {
+    "PREFERENCES_SAVED": "Настройки сохранены!",
+    "PREFERENCES_FAILED": "Ошибка сохранения настроек.",
+    "PASSWORD_UPDATED": "Пароль успешно обновлен!",
+    "PASSWORD_UPDATE_ERROR": "Ошибка обновления пароля"
+  },
+  "HEADER": {
+    "LOGIN": "Войти",
+    "REGISTER": "Зарегистрироваться",
+    "CONTACT": "Контакт",
+    "OWNER_SECTION": "Раздел владельца",
+    "PROFILE": "Профиль",
+    "CREATE_TMER": "Создать Tmer",
+    "MANAGE_TMERS": "Управление Tmers",
+    "MANAGE_BOOKINGS": "Управление бронированиями",
+    "LOGOUT": "Выйти"
+  },
+  "TMER_LIST": {
+    "TITLE": "Вы на связи, по всему миру"
+  },
+  "TMER_DETAIL": {
+    "CATEGORY": "Категория",
+    "AVAILABLE": "Доступно",
+    "NOT_AVAILABLE": "Недоступно",
+    "USERNAME": "Имя пользователя",
+    "TITLE": "Название",
+    "CITY": "Город",
+    "DESCRIPTION": "Описание",
+    "ASSETS": "Качества",
+    "SPONTANEOUS": "Спонтанный",
+    "COOL": "Спокойный",
+    "EASY_PERSON": "Легкий человек",
+    "KEEN": "Увлеченный",
+    "FRIENDLY": "Дружелюбный",
+    "SPORTIVE": "Спортивный",
+    "LANGUAGES": "Языки",
+    "PHOTOS": "Фотографии"
+  },
+  "TMER_BOOKING": {
+    "PER_HOUR": "в час",
+    "DATES": "Даты",
+    "GUESTS": "Гости",
+    "RESERVE_BUTTON": "Забронировать сейчас",
+    "LOGIN_PROMPT": "Войдите, чтобы забронировать этого человека сегодня",
+    "NOTE_TITLE": "Примечание к бронированию",
+    "NOTE_TEXT": "Хозяин подтвердит ваше бронирование после оплаты.",
+    "CONFIRM_TITLE": "Подтвердить бронирование",
+    "HOURS": "часы",
+    "PER_HOUR_PRICE": "в час",
+    "TOTAL_GUESTS": "Гости",
+    "PRICE": "Цена",
+    "CONFIRM": "Подтвердить",
+    "CLOSE": "Закрыть"
+  },
+  "TMER_LIST_ITEM": {
+    "CATEGORY": "Категория",
+    "PRICE_PER_SESSION": "Цена за сеанс",
+    "FREE_CANCELLATION": "Бесплатная отмена"
+  },
+  "LOGIN": {
+    "TITLE": "Войти",
+    "EMAIL": "Электронная почта",
+    "PASSWORD": "Пароль",
+    "SUBMIT": "Отправить",
+    "INVALID_EMAIL": "Требуется электронная почта.",
+    "INVALID_PASSWORD": "Требуется пароль.",
+    "EMAIL_PATTERN": "Электронная почта должна быть действительной.",
+    "CATCHPHRASE": "Как наш участник, вы имеете доступ к самым удивительным людям в мире.",
+    "ERRORS": {
+      "INVALID_CREDENTIALS": "Неверные учетные данные. Пожалуйста, попробуйте еще раз."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Зарегистрироваться",
+    "USERNAME": "Имя пользователя",
+    "EMAIL": "Электронная почта",
+    "PASSWORD": "Пароль",
+    "CONFIRM_PASSWORD": "Подтвердите пароль",
+    "SUBMIT": "Отправить",
+    "USERNAME_REQUIRED": "Требуется имя пользователя.",
+    "EMAIL_REQUIRED": "Требуется электронная почта.",
+    "PASSWORD_REQUIRED": "Требуется пароль.",
+    "PASSWORD_CONFIRMATION_REQUIRED": "Требуется подтверждение пароля.",
+    "PASSWORD_MISMATCH": "Пароли не совпадают.",
+    "SUCCESS_MESSAGE": "Успешно зарегистрированы! Теперь вы можете войти.",
+    "CATCHPHRASE": "Как наш участник, вы имеете доступ к самым удивительным людям в мире."
+  },
+  
+  "MANAGE_BOOKING": {
+    "MY_BOOKINGS": "Мои бронирования",
+    "PENDING_BOOKINGS": "Мои ожидающие бронирования",
+    "DELETED_TMER": "Удаленный Tmer",
+    "PRICE": "Цена",
+    "REVENUE": "Доход",
+    "STATUS": "Статус",
+    "CONFIRM": "Подтвердить",
+    "DECLINE": "Отклонить",
+    "NO_BOOKINGS": "У вас нет бронирований. Перейдите в раздел tmers и забронируйте человека для общения сегодня.",
+    "NO_PENDING": "У вас нет ожидающих бронирований!",
+    "AVAILABLE_TMERS": "Доступные Tmers",
+    "BOOKING_MADE_BY": "Бронирование сделано",
+    "UNKNOWN_USER": "Неизвестный пользователь",
+    "GO_TO_TMER": "Перейти к Tmer"
+  },
+  "TMER_CREATE": {
+    "TITLE": "Создать TellMe",
+    "FORM": {
+      "TITLE": "Название",
+      "CITY": "Город",
+      "STREET": "Улица",
+      "CATEGORY": "Категория",
+      "AGE": "Возраст",
+      "DESCRIPTION": "Описание",
+      "DAILY_RATE": "Дневная ставка",
+      "SHARED": "Общий",
+      "SUBMIT": "Отправить"
+    },
+    "CATCHPHRASE": "Сотни замечательных людей на расстоянии нескольких кликов.",
+    "ERRORS": {
+      "UNKNOWN": "Произошла неизвестная ошибка."
+    }
+  },
+  "MANAGE_TMER": {
+    "TITLE": "Мои Tmers",
+    "GO_TO_TMER": "Перейти к Tmer",
+    "CREATED_AT": "Создано",
+    "DELETE": "Удалить",
+    "EDIT": "Редактировать",
+    "CONFIRM_MESSAGE": "Подтверждаете удаление?",
+    "CONFIRM_YES": "Да",
+    "CONFIRM_NO": "Нет",
+    "NO_TMERS": "У вас пока нет созданных Tmer. Если вы хотите разместить свое предложение, перейдите по этой ссылке.",
+    "REGISTER_TMER": "Зарегистрировать Tmer",
+    "TOAST": {
+      "SUCCESS_DELETE": "Tmer успешно удален!",
+      "ERROR_DELETE": "Нельзя удалить Tmer с активными бронированиями!"
+    }
+  }
+
+}

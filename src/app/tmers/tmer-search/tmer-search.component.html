@@ -1,0 +1,15 @@
+<section id="rentalListing">
+    <h1 *ngIf="errors && errors.length > 0" class="page-title">
+        <p *ngFor="let error of errors">
+            {{ error.detail }}
+        </p>
+    </h1>
+    <div class="row" *ngIf="!errors || errors.length === 0">
+        <h1 *ngIf="tmers.length > 0" class="page-title">Tell me in {{ city }}</h1>
+        <div class='col-md-3 col-xs-6' *ngFor="let tmer of tmers">
+            <app-tmer-list-item [tmer]="tmer"></app-tmer-list-item>
+        </div>
+    </div>
+</section>
+
+
