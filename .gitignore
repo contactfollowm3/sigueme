@@ -72,4 +72,10 @@ yarn-error.log*
 # Build outputs (remove duplicates)
 /build
 /.angular
-/aot
+/aotcert/ 
+config/ 
+.env 
+node_modules/ 
+*.key 
+*.pem 
+*.cert 
